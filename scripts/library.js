@@ -129,11 +129,17 @@ const renderController = ((container, libraryController) => {
 
   const index = () => {
     container.appendChild(newButton());
-    const books = newElement("div", "books");
-    libraryController.library.forEach((book, index) =>
-      books.appendChild(renderBook(book, index))
-    );
-    container.appendChild(books);
+    if (libraryController.library.length > 0) {
+      const books = newElement("div", "books");
+      libraryController.library.forEach((book, index) =>
+        books.appendChild(renderBook(book, index))
+      );
+      container.appendChild(books);
+    } else {
+      container.appendChild(
+        newElement("h1", "", "Looks like you haven't saved any books yet!")
+      );
+    }
   };
 
   const newBookForm = () => {
