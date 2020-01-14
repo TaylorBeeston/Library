@@ -13,7 +13,9 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  background-color: hsl(221, 58%, 20%);
+  background-color: hsl(36, 25%, 46%);
+  font-family: Arial, Helvetica, sans-serif;
+  color: hsl(36, 10%, 5%);
 }
 
 footer {
@@ -34,4 +36,99 @@ footer a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#container {
+  background-color: hsl(36, 34%, 51%);
+  width: 90%;
+  height: 90%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.books {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: hsl(36, 35%, 95%);
+  padding: 24px;
+  margin: 24px;
+  border-radius: 16px;
+  border: thin solid hsl(36, 25%, 70%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info {
+  background-color: hsl(36, 35%, 80%);
+  padding: 8px;
+  border-radius: 0 16px 16px 0;
+  border-left: 4px solid hsl(36, 75%, 55%);
+  border-bottom: thin solid hsl(36, 75%, 55%);
+}
+
+.title {
+  padding: 16px 0;
+  border-bottom: thin solid hsl(36, 75%, 55%);
+}
+
+.pages {
+  background-color: hsl(36, 35%, 80%);
+  padding: 16px;
+  border-radius: 16px;
+  border-bottom: thin solid hsl(36, 75%, 55%);
+}
+
+.read-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  background-color: hsl(36, 35%, 80%);
+  padding: 16px;
+  border-radius: 16px;
+  margin-bottom: 8px;
+  border-bottom: thin solid hsl(36, 75%, 55%);
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: hsl(351, 46%, 61%);
+  padding: 8px;
+  border-radius: 8px;
+  border: thin solid hsl(36, 25%, 90%);
+  color: hsl(36, 25%, 90%);
+}
+
+.new-button {
+  background-color: hsl(126, 46%, 61%);
+  width: 80%;
+  padding: 24px;
+  font-size: 16px;
+  border-radius: 24px;
+  border: thin solid hsl(36, 25%, 90%);
+}
+
+.new-book-form {
+  background-color: hsl(36, 35%, 95%);
+  width: 80%;
+  height: 80%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
 }
